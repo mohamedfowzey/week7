@@ -46,6 +46,9 @@ header {
   box-sizing: border-box;
 }
 nav {
+  flex-grow: 3;
+}
+.logo{
   flex-grow: 2;
 }
 .nav-ul {
@@ -150,8 +153,7 @@ nav {
 }
 
 .scale-on-hover:hover{
-  width: 305;
-
+  transform: scale(1.02);
 }
 footer{
   background-color: var(---DarkBlue);
@@ -159,8 +161,12 @@ footer{
 }
 .column{
   padding: 40px;
+  /* display: flex; */
+  flex-direction: column;
+  justify-content: space-between;
 }
 .flex-end{
   flex-grow: 2;
   text-align: end;
+  align-self: stretch;
 }
