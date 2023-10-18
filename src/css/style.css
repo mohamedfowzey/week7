@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&family=Roboto:wght@100;300;400;700&display=swap");
+:root {
+  ---DarkBlue: #2d314d;
+  ---LimeGreen: #31d35c;
+  ---BrightCyan: #2bb7da;
+  ---grayFont: #9698a6;
+  ---LightGrayishBlue: #f3f4f6;
+  ---VeryLightGray: #fafafa;
+}
+html {
+  font-size: 18px;
+  font-family: "public sans", "sans serif";
+}
+body {
+  margin: 0;
+}
+header {
+  position: sticky;
+  /* width: 100vw; */
+  z-index: 3;
+  background-color: white;
+  top: 0;
+  padding: 10px 0;
+}
+.normal-font {
+  color: var(---grayFont);
+  font-size: 14px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.flex-center{
+  justify-content: center;
+}
+.flex-start{
+  justify-content: flex-start;
+}
+.container {
+  width: 100%;
+  max-width: 980px;
+  padding: 0 24px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+nav {
+  flex-grow: 2;
+}
+.nav-ul {
+  list-style: none;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+.nav-ul li {
+  display: block;
+  padding: 18px;
+  position: relative;
+  text-align: center;
+}
+.nav-ul li::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(
+    to right,
+    var(---LimeGreen),
+    var(---BrightCyan)
+  );
+  transform: scaleX(0);
+  border-radius: 8px;
+  transition: 0.5s;
+}
+.nav-ul li:hover::after {
+  transform: scaleX(1);
+}
+.nav-ul li a {
+  text-decoration: none;
+  color: var(---grayFont);
+}
+.main-btn {
+  display: inline-block;
+  width: fit-content;
+  padding: 14px 32px;
+  border-radius: 24px;
+  background-image: linear-gradient(
+    to right,
+    var(---LimeGreen),
+    var(---BrightCyan)
+  );
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+}
+#hero {
+  height: calc(100vh - 77px);
+  position: relative;
+}
+#hero .container {
+  height: 100% !important;
+}
+.right {
+  width: 33%;
+}
+.right * {
+  margin-bottom: 40px;
+  line-height: 24px;
+}
+.big-font {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 3.1rem;
+}
+.left {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 2;
+  height: 110vh;
+}
+.left img {
+  height: 100%;
+}
+.bg-gray {
+  background-color: var(---VeryLightGray);
+}
+.heading {
+  max-width: 500px;
+  padding: 40px 0;
+}
+.med-font {
+  font-size: 1.5rem;
+  font-weight: 400;
+  /* color: red; */
+}
+.card {
+  width: 300px;
+  margin: 32px 4px;
+  transition: .4s;
+}
+.article-img {
+  width: 100%;
+}
+
+.scale-on-hover:hover{
+  width: 305;
+
+}
+footer{
+  background-color: var(---DarkBlue);
+  color: white;
+}
+.column{
+  padding: 40px;
+}
+.flex-end{
+  flex-grow: 2;
+  text-align: end;
+}
