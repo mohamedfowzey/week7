@@ -128,7 +128,7 @@ nav {
 .left {
   position: absolute;
   right: 0;
-  top: 0;
+  top: -47px;
   z-index: 2;
   height: 110vh;
 }
