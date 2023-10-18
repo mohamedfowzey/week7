@@ -50,6 +50,10 @@ nav {
 }
 .logo{
   flex-grow: 2;
+  padding: 18px 0;
+}
+.menu-icon{
+  display: none;
 }
 .nav-ul {
   list-style: none;
@@ -160,13 +164,24 @@ footer{
   color: white;
 }
 .column{
-  padding: 40px;
-  /* display: flex; */
+  padding: 58px 0;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-self: stretch;
+}
+.column:not(:first-child,:last-child){
+  padding-left:80px;
 }
 .flex-end{
   flex-grow: 2;
-  text-align: end;
-  align-self: stretch;
+  align-items: flex-end;
+}
+footer p, footer i:hover{ transition: .4s;}
+footer p:hover, footer i:hover{
+  color: var(---LimeGreen);
+  cursor: pointer;
+}
+footer img{
+  filter: invert(1);
 }

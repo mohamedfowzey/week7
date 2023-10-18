@@ -1,5 +1,6 @@
+
 @media screen and (max-width:890px) {
-    nav{
+    nav, header .main-btn{
         display: none;
     }
     #hero{
@@ -19,5 +20,10 @@
     .flex-end{
         align-self: initial;
         text-align: center;
+    }
+    .menu-icon{
+        display: block;
+        font-size: 1.5rem;
+        color: var(---DarkBlue);
     }
 }
